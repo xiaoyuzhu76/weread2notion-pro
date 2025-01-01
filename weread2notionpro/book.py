@@ -63,7 +63,7 @@ def insert_book_to_notion(books, index, bookId):
             notion_helper.get_relation_id(
                 x, notion_helper.author_database_id, USER_ICON_URL
             )
-            for x in book.get("author").split(" ")
+            for x in book.get("author")
         ]
         if book.get("categories"):
             book["分类"] = [
